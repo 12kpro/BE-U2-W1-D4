@@ -8,6 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 @Setter
 @Getter
 @Slf4j
+@Entity
 public class ExtraPizzaFamilySizeDecorator extends ExtraPizzaDecorator{
     public ExtraPizzaFamilySizeDecorator(){
         super("Family Size",4.15, 1.95);

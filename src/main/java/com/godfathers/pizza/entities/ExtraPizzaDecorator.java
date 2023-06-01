@@ -12,12 +12,11 @@ import lombok.extern.slf4j.Slf4j;
 @Getter
 @Slf4j
 @NoArgsConstructor
-//@Table(name="toppings")
-//@Entity
-//@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@Table(name="toppings")
+@Entity
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 public abstract class ExtraPizzaDecorator extends Consumation {
-    @ManyToOne
-    @JoinColumn(name = "decorated_pizza_id")
+    @Transient
     protected Consumation decoratedPizza;
 
     public ExtraPizzaDecorator(String name, Double price, Double calories) {

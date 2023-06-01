@@ -10,7 +10,7 @@ import lombok.extern.slf4j.Slf4j;
 @Getter
 @Slf4j
 @ToString
-
+@Entity
 public class ExtraPizzaCheeseDecorator extends ExtraPizzaDecorator{
     public ExtraPizzaCheeseDecorator(){
         super("Cheese",0.69, 92.0);
